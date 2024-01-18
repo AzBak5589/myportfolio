@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import landingImage from "../../images/me.svg";
+import landingImage from "../../images/me.jpeg";
 import Draw from "../../components/Draw";
 import SocialIcons from "../../components/SocialIcons";
 
@@ -51,13 +51,13 @@ const Landing = ({ name }) => {
             className="description"
             onInit={(typewriter) => {
               typewriter
-                .typeString("I'm a Developer")
+                .typeString("I'm a Web Developer")
                 .pauseFor(1500)
                 .deleteChars(9)
-                .typeString("Designer")
+                .typeString("Student In LPU")
                 .pauseFor(1500)
                 .deleteAll()
-                .typeString("Bringing your ideas to life")
+                .typeString("Welcome to my portfolio")
                 .start();
             }}
           />
@@ -71,7 +71,7 @@ const Landing = ({ name }) => {
           transition={{ duration: 1, ease: "easeInOut" }}
           style={styles.landingImage}
           src={landingImage}
-          alt="Michael Yeates"
+          alt="AZIZ BAKAYOKO"
         />
       </div>
       <SocialIcons />

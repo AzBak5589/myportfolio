@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: var(--spacing);
+  overflow: hidden;
 }
 
 .contentTitle {
@@ -56,7 +57,7 @@ ul {
   width: 100%;
   padding: 10px 10px;
   border: none;
-  background-color: #161616;
+  background-color: var(--bg-color);
   margin-bottom: 20px;
   border-bottom: 1px solid var(--grey);
   border-radius: 1px;
@@ -66,6 +67,14 @@ ul {
 
 .formControl:focus {
   border-bottom: 1px solid var(--hl-color);
+}
+
+.formError {
+  border-bottom: 1px solid var(--hl2-color);
+}
+
+.formError::placeholder {
+  color: var(--hl2-color);
 }
 
 textarea {
@@ -103,7 +112,7 @@ textarea {
 }
 
 .mediaWrap a:hover {
-  color: #03b979;
+  color: var(--hl2-color);
 }
 
 @media (min-width: 400px) {
@@ -118,7 +127,7 @@ textarea {
     padding-bottom: var(--sm-spacing);
   }
 
-  .contact .socialIcons::before,
+  /* .contact .socialIcons::before,
   .contact .socialIcons::after {
     background-color: var(--grey);
     content: "";
@@ -127,5 +136,5 @@ textarea {
     display: inline-block;
     margin-bottom: 7px;
     margin-right: 10px;
-  }
+  } */
 }
